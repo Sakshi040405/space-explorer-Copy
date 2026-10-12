@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b1c">
+
+    <title>Space Explorer | Discover the Universe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="#home" class="logo">
+            <span class="logo-icon">✦</span>
+            <span>SPACE<span class="logo-highlight">EXPLORER</span></span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#planets">Planets</a>
+            <a href="#moon">Your Moon</a>
+            <a href="#facts">Space Facts</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    YOUR JOURNEY BEGINS HERE
+                </p>
+
+                <h1>
+                    Explore the
+                    <span class="gradient-text">Infinite</span>
+                    Universe
+                </h1>
+
+                <p class="hero-description">
+                    Discover distant planets, explore the mysteries of space,
+                    and find out which Moon phase appeared on your birthday.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#planets" class="btn btn-primary">
+                        Explore Planets ↗
+                    </a>
+
+                    <a href="#moon" class="btn btn-secondary">
+                        Discover Your Moon
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>8</strong>
+                        <span>Planets</span>
+                    </div>
+
+                    <div>
+                        <strong>1</strong>
+                        <span>Solar System</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>Possibilities</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Illustration of planets in space">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orbit orbit-three"></div>
+
+                <div class="planet planet-sun"></div>
+                <div class="planet planet-earth"></div>
+                <div class="planet planet-mars"></div>
+                <div class="planet planet-saturn"></div>
+
+                <span class="space-star star-one">✦</span>
+                <span class="space-star star-two">✧</span>
+                <span class="space-star star-three">✦</span>
+                <span class="space-star star-four">·</span>
+                <span class="space-star star-five">✧</span>
+            </div>
+
+            <a href="#planets" class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <span>↓</span>
+            </a>
+        </section>
+
+        <!-- PLANETS SECTION -->
+        <section class="section planets-section" id="planets">
+            <div class="section-heading">
+                <p class="eyebrow">OUR SOLAR SYSTEM</p>
+                <h2>Meet Our <span class="gradient-text">Planets</span></h2>
+                <p>
+                    Eight fascinating worlds, each with its own story.
+                    Select a planet to learn more.
+                </p>
+            </div>
+
+            <div class="planet-search">
+                <span>⌕</span>
+                <input
+                    type="search"
+                    id="planetSearch"
+                    placeholder="Search planets..."
+                    aria-label="Search planets"
+                >
+            </div>
+
+            <div class="planet-grid" id="planetGrid">
+                <article class="planet-card" data-planet="mercury">
+                    <div class="planet-art mercury-art">
+                        <div class="planet-ball"></div>
+                    </div>
+                    <div class="planet-card-content">
+                        <span class="planet-number">01 / TERRESTRIAL</span>
+                        <h3>Mercury</h3>
+                        <p>The smallest planet and the closest to the Sun.</p>
+                        <button class="text-button" data-open-planet="mercury">
+                            Explore planet ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="planet-card" data-planet="venus">
+                    <div class="planet-art venus-art">
+                        <div class="planet-ball"></div>
+                    </div>
+                    <div class="planet-card-content">
+                        <span class="planet-number">02 / TERRESTRIAL</span>
+                        <h3>Venus</h3>
+                        <p>A scorching world with a thick, cloudy atmosphere.</p>
+                        <button class="text-button" data-open-planet="venus">
+                            Explore planet ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="planet-card" data-planet="earth">
+                    <div class="planet-art earth-art">
+                        <div class="planet-ball"></div>
+                    </div>
+                    <div class="planet-card-content">
+                        <span class="planet-number">03 / TERRESTRIAL</span>
+                        <h3>Earth</h3>
+                        <p>Our home, the only world known to support life.</p>
+                        <button class="text-button" data-open-planet="earth">
+                            Explore planet ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="planet-card" data-planet="mars">
+                    <div class="planet-art mars-art">
+                        <div class="planet-ball"></div>
+                    </div>
+                    <div class="planet-card-content">
+                        <span class="planet-number">04 / TERRESTRIAL</span>
+                        <h3>Mars</h3>
+                        <p>The Red Planet, with enormous volcanoes and valleys.</p>
+                        <button class="text-button" data-open-planet="mars">
+                            Explore planet ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="planet-card" data-planet="jupiter">
+                    <div class="planet-art jupiter-art">
+                        <div class="planet-ball"></div>
+                    </div>
+                    <div class="planet-card-content">
+                        <span class="planet-number">05 / GAS GIANT</span>
+                        <h3>Jupiter</h3>
+                        <p>The largest planet, famous for its Great Red Spot.</p>
+                        <button class="text-button" data-open-planet="jupiter">
+                            Explore planet ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="planet-card" data-planet="saturn">
+                    <div class="planet-art saturn-art">
+                        <div class="planet-ball"></div>
+                    </div>
+                    <div class="planet-card-content">
+                        <span class="planet-number">06 / GAS GIANT</span>
+                        <h3>Saturn</h3>
+                        <p>A gas giant surrounded by spectacular rings.</p>
+                        <button class="text-button" data-open-planet="saturn">
+                            Explore planet ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="planet-card" data-planet="uranus">
+                    <div class="planet-art uranus-art">
+                        <div class="planet-ball"></div>
+                    </div>
+                    <div class="planet-card-content">
+                        <span class="planet-number">07 / ICE GIANT</span>
+                        <h3>Uranus</h3>
+                        <p>An icy blue-green planet that rotates on its side.</p>
+                        <button class="text-button" data-open-planet="uranus">
+                            Explore planet ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="planet-card" data-planet="neptune">
+                    <div class="planet-art neptune-art">
+                        <div class="planet-ball"></div>
+                    </div>
+                    <div class="planet-card-content">
+                        <span class="planet-number">08 / ICE GIANT</span>
+                        <h3>Neptune</h3>
+                        <p>A distant blue world with powerful winds.</p>
+                        <button class="text-button" data-open-planet="neptune">
+                            Explore planet ↗
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <p class="empty-search" id="emptySearch" hidden>
+                No planets found. Try another name.
+            </p>
+        </section>
+
+        <!-- BIRTHDAY MOON SECTION -->
+        <section class="section moon-section" id="moon">
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE PIECE OF THE COSMOS</p>
+                <h2>Discover Your <span class="gradient-text">Birthday Moon</span></h2>
+                <p>
+                    Enter your date of birth to discover the approximate
+                    lunar phase on that date.
+                </p>
+            </div>
+
+            <div class="birthday-panel">
+                <div class="birthday-form-area">
+                    <div class="moon-icon-small">☾</div>
+
+                    <h3>Your Moon, Your Story</h3>
+
+                    <p>
+                        Every night, the Moon shows us a different face.
+                        Let's discover yours.
+                    </p>
+
+                    <form id="birthdayForm">
+                        <label for="birthDate">Your date of birth</label>
+
+                        <input
+                            type="date"
+                            id="birthDate"
+                            name="birthDate"
+                            required
+                        >
+
+                        <button type="submit" class="btn btn-primary full-width">
+                            Reveal My Moon ✦
+                        </button>
+
+                        <p class="form-note">
+                            Your birthday stays in this browser.
+                        </p>
+                    </form>
+                </div>
+
+                <div class="moon-result" id="moonResult" aria-live="polite">
+                    <div class="moon-visual" id="moonVisual">
+                        <div class="moon-disc" id="moonDisc"></div>
+                    </div>
+
+                    <p class="eyebrow" id="moonEyebrow">
+                        WAITING FOR YOUR DATE
+                    </p>
+
+                    <h3 id="moonTitle">Your Moon Awaits</h3>
+
+                    <p id="moonDescription">
+                        Enter your birthday to reveal the Moon's approximate
+                        phase and illumination.
+                    </p>
+
+                    <div class="moon-meta" id="moonMeta">
+                        <div>
+                            <span>PHASE</span>
+                            <strong>—</strong>
+                        </div>
+
+                        <div>
+                            <span>ILLUMINATION</span>
+                            <strong>—</strong>
+                        </div>
+
+                        <div>
+                            <span>MOON AGE</span>
+                            <strong>—</strong>
+                        </div>
+                    </div>
+
+                    <p class="moon-photo-note">
+                        The Moon shown here is an illustration of its phase,
+                        not a real-time telescope photograph.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPACE FACTS SECTION -->
+        <section class="section facts-section" id="facts">
+            <div class="section-heading">
+                <p class="eyebrow">DID YOU KNOW?</p>
+                <h2>Universe <span class="gradient-text">Uncovered</span></h2>
+                <p>Little facts about a very big universe.</p>
+            </div>
+
+            <div class="fact-card">
+                <span class="fact-decoration">✦</span>
+
+                <p class="eyebrow" id="factCounter">SPACE FACT 01</p>
+
+                <h3 id="factText">
+                    A day on Venus is longer than its year.
+                </h3>
+
+                <div class="fact-controls">
+                    <button
+                        class="btn btn-secondary"
+                        id="factPrevious"
+                        type="button"
+                    >
+                        ← Previous
+                    </button>
+
+                    <button
+                        class="btn btn-primary"
+                        id="factNext"
+                        type="button"
+                    >
+                        Next fact →
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PLANET DETAILS DIALOG -->
+    <dialog class="planet-dialog" id="planetDialog">
+        <button
+            class="dialog-close"
+            id="dialogClose"
+            type="button"
+            aria-label="Close planet details"
+        >
+            ×
+        </button>
+
+        <div class="dialog-planet-art" id="dialogPlanetArt"></div>
+
+        <p class="eyebrow" id="dialogPlanetType">PLANET DETAILS</p>
+
+        <h2 id="dialogPlanetName">Planet</h2>
+
+        <p id="dialogPlanetDescription"></p>
+
+        <div class="dialog-stats">
+            <div>
+                <span>DAY LENGTH</span>
+                <strong id="dialogDay">—</strong>
+            </div>
+
+            <div>
+                <span>YEAR LENGTH</span>
+                <strong id="dialogYear">—</strong>
+            </div>
+
+            <div>
+                <span>AVERAGE DISTANCE FROM SUN</span>
+                <strong id="dialogDistance">—</strong>
+            </div>
+        </div>
+
+        <button
+            class="btn btn-primary full-width"
+            id="dialogCloseBottom"
+            type="button"
+        >
+            Continue Exploring
+        </button>
+    </dialog>
+
+    <footer class="site-footer">
+        <a href="#home" class="logo">
+            <span class="logo-icon">✦</span>
+            <span>SPACE<span class="logo-highlight">EXPLORER</span></span>
+        </a>
+
+        <p>Made for curious minds and cosmic dreamers.</p>
+
+        <p class="footer-copy">
+            © <span id="currentYear"></span> Space Explorer
+        </p>
+    </footer>
+</body>
+</html>
