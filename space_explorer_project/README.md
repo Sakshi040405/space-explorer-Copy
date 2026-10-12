@@ -1,24 +1,50 @@
-# Space Explorer 🌌
+# 🚀 Space Explorer
 
-A responsive space and solar-system discovery website built with HTML, CSS, and vanilla JavaScript.
+An interactive and responsive website that lets users explore planets, discover interesting space facts, and explore the Moon phase associated with their birthday.
 
-## Features
-- Responsive layout and mobile navigation
-- Search/filter for eight planet cards
-- Planet details modal with facts
-- Random-access “surprise me” fact section
-- CSS-created planet illustrations (no image assets required)
-- Accessible labels and semantic sections
+## ✨ Features
 
-## Technologies
-HTML5 · CSS3 · JavaScript
+- 🪐 **Explore Planets:** Browse planet cards and learn about different planets.
+- 🔍 **Planet Search:** Find planets quickly using the search feature.
+- 🌌 **Planet Details:** View additional information about planets through interactive popups.
+- 🌙 **Birthday Moon Phase Calculator:** Enter a birthday to see an approximate Moon phase.
+- 💡 **Space Facts:** Discover interesting facts about space.
+- 📱 **Responsive Design:** Enjoy the website on desktop and mobile devices.
 
-## Run locally
-1. Download or clone this project.
-2. Open `index.html` in your browser.
+## 🛠️ Technologies Used
 
-No package installation or build tools are needed.
+- HTML5
+- CSS3
+- JavaScript
+- Git and GitHub
 
-## Resume description
-**Space Explorer — Interactive Solar System Website**  
-Built a responsive space exploration website using HTML, CSS, and JavaScript, featuring planet search, interactive planet detail dialogs, and rotating space facts.
+## 📂 Project Structure
+
+```text
+space_explorer_project/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+## ▶️ How to Run Locally
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/Sakshi040405/space-explorer-Copy.git
+   ```
+
+2. Open the project folder in VS Code.
+3. Open `index.html` in your browser, or use the VS Code Live Server extension.
+
+## 🌐 Live Demo
+
+After enabling GitHub Pages, add your published website link here.
+
+## 👩‍💻 Author
+
+**Sakshi Pawar**
+
+GitHub: [Sakshi040405](https://github.com/Sakshi040405)
